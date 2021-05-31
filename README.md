@@ -6,15 +6,15 @@
 
 2. List all files: [GET] /file
 3. Delete file: [DELETE] /file
-    body: {
+    - body: {
         'file_path': 'test/abc.pdf'
     }
 4. Create folder: [POST] /folder
-    body: {
+    - body: {
         'folder': 'test'
     }
 5. Delete folder: [DELETE] /folder
-    body: {
+    - body: {
         'folder': 'test'
     }
 6. LogIn: [GET] /login
