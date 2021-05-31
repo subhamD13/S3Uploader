@@ -2,7 +2,7 @@
 ## Procedure to upload files securely:
 1. Upload File: [GET] /file-upload/<file_name>
     - using this api Front-End will get time limited Presigned URL. 
-    - Using that URL and [PUT] method we can upload the exact file.
+    - Using that URL and [PUT] method Front-End can upload the exact file.
 
 2. List all files: [GET] /file
 3. Delete file: [DELETE] /file
