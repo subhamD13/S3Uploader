@@ -1,8 +1,8 @@
 # REST APIs for login Authentication & s3 data upload using Flask
 ## Procedure to upload files securely:
 1. Upload File: [GET] /file-upload/<file_name>
-    a) using this api Front-End will get time limited Presigned URL. 
-    b) Using that URL and [PUT] method we can upload the exact file.
+    - using this api Front-End will get time limited Presigned URL. 
+    - Using that URL and [PUT] method we can upload the exact file.
 
 2. List all files: [GET] /file
 3. Delete file: [DELETE] /file
@@ -18,17 +18,17 @@
         'folder': 'test'
     }
 6. LogIn: [GET] /login
-    Authorize using Username and Password.
+    - Authorize using Username and Password.
 7. Get all User details: [GET] /user
-    Only admin can get these details.
+    - Only admin can get these details.
 8. Get specific User details: [GET] /user/<public_id>
-    Only admin can get these details.
+    - Only admin can get these details.
 9. Promote specific User to Admin: [PUT] /user/<public_id>
-    Only admin can do the task.
+    - Only admin can do the task.
 10. Delete specific User: [GET] /user/<public_id>
-    Only admin can do the task.
+    - Only admin can do the task.
 11. SignIn: [POST] /user
-    body: {
+    - body: {
         "name": "Adi", 
         "password": "1234"
     }
